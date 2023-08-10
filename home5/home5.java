@@ -48,10 +48,6 @@ public class home5 {
         String[] textArray = text.toLowerCase().replaceAll(regex, "").split(" ");
         return textArray;
     }
-//    public static String[] textRegsWithOutDefise(String text){
-//        String[] textArray = text.toLowerCase().replaceAll("[^а-яА-Яa-zA-z ]", "").split(" ");
-//        return textArray;
-//    }
 
     public static ArrayList<String> getNoRepite(String[] textArray) {
         ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(textArray));
