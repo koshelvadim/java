@@ -43,6 +43,7 @@ public class Elevator {
 
     public Elevator(int maxFloor) {
         minFloor = 1;
+        if(minFloor >= maxFloor) throw new UnsupportedOperationException();
         this.maxFloor = maxFloor;
     }
 
