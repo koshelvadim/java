@@ -8,7 +8,12 @@ public class Main {
         elevator.move(8);
         elevator.move(4);
         elevator.move(9);
-        elevator.move(2);
+        elevator.setCurrentFloor(4);
+        elevator.move(10);
+
+        Elevator elevator1 = new Elevator(5);
+        elevator1.move(3);
+        elevator1.move(6); // должна быть ошибка
     }
 
 }

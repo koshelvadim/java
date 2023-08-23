@@ -26,6 +26,14 @@ public class Elevator {
     private final int maxFloor;
 
 
+    public int getCurrentFloor() {
+        return currentFloor;
+    }
+    public int setCurrentFloor(int newFloor) {
+        currentFloor = newFloor;
+        return currentFloor;
+    }
+
     public Elevator(int minFloor, int maxFloor) {
         if(minFloor >= maxFloor) throw new UnsupportedOperationException();
         this.currentFloor = minFloor;
@@ -33,8 +41,9 @@ public class Elevator {
         this.maxFloor = maxFloor;
     }
 
-    public int getCurrentFloor() {
-        return currentFloor;
+    public Elevator(int maxFloor) {
+        minFloor = 1;
+        this.maxFloor = maxFloor;
     }
 
     public void move(int floor) {
